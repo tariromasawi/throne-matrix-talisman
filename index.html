@@ -3,74 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Throne Matrix Talisman · 77-99-33</title>
-  <meta name="description" content="A living digital talisman of protection for the House of the Throne. Mwari ndi Mwari." />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∞</text></svg>" />
+  <title>The Throne Matrix Talisman · MASAWI · 77-99-33</title>
+  <meta name="description" content="Living digital talisman. Masawi named in light. MWARINDIMWARI." />
+  <!-- ARTIFACT · NEW BEGINNING · GUARDIAN OF LIGHT: MASAWI^77 · MASAWI^99 · MASAWI^33 · MWARINDIMWARI -->
   <style>
     :root { --gold:#d4af37; --gold-soft:#f0d78c; --ink:#07060a; }
     * { box-sizing:border-box; margin:0; padding:0; }
     html,body { background:var(--ink); color:var(--gold-soft); min-height:100%; font-family:Palatino,Georgia,serif; overflow-x:hidden; }
-    #field { position:fixed; inset:0; pointer-events:none; z-index:0; }
-    .wrap { position:relative; z-index:2; max-width:920px; margin:0 auto; padding:48px 22px 120px; }
+    #field, #names { position:fixed; inset:0; pointer-events:none; }
+    #field { z-index:0; } #names { z-index:1; }
+    .wrap { position:relative; z-index:2; max-width:920px; margin:0 auto; padding:48px 22px 140px; }
     header { text-align:center; }
     h1 { font-weight:500; letter-spacing:.18em; font-size:clamp(1.05rem,3.2vw,1.55rem); text-transform:uppercase; color:var(--gold); }
     .sub { margin-top:8px; letter-spacing:.42em; font-size:.72rem; opacity:.8; text-transform:uppercase; }
-    .matrix-live { margin:28px auto 8px; text-align:center; font-family:ui-monospace,Menlo,monospace; color:var(--gold); letter-spacing:.12em; font-size:clamp(.85rem,2.4vw,1.15rem); }
+    .matrix-live { margin:22px auto 6px; text-align:center; font-family:ui-monospace,Menlo,monospace; color:var(--gold); }
+    .count { font-family:ui-monospace,Menlo,monospace; font-size:.78rem; color:#f6e7b2; margin-top:6px; }
     .pulse { animation:pulse 3.3s ease-in-out infinite; }
     @keyframes pulse { 0%,100%{opacity:.65} 50%{opacity:1} }
-    .sigil-row { display:flex; justify-content:center; gap:18px; flex-wrap:wrap; margin:22px 0 36px; font-size:1.35rem; color:var(--gold); }
+    .sigil-row { display:flex; justify-content:center; gap:18px; margin:18px 0 28px; font-size:1.35rem; color:var(--gold); }
     section { background:linear-gradient(180deg,rgba(58,29,43,.35),rgba(7,6,10,.55)); border:1px solid rgba(212,175,55,.28); border-radius:18px; padding:28px 24px; margin:18px 0; }
     h2 { font-size:.95rem; letter-spacing:.28em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
     p,li { line-height:1.75; font-size:1.02rem; }
     .rite { font-style:italic; color:#f6e7b2; }
     .bloodline { list-style:none; }
     .bloodline li { padding:6px 0 6px 18px; position:relative; }
-    .bloodline li::before { content:"✦"; position:absolute; left:0; color:var(--gold); }
+    .bloodline li::before { content:"\2726"; position:absolute; left:0; color:var(--gold); }
     .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px; }
     @media (max-width:640px){ .grid3{grid-template-columns:1fr;} }
     .tile { border:1px solid rgba(212,175,55,.25); border-radius:12px; padding:14px 12px; text-align:center; }
-    .tile b { display:block; color:var(--gold); letter-spacing:.16em; font-size:.78rem; }
+    .tile b { display:block; color:var(--gold); font-size:.78rem; }
     .cmd { width:100%; margin-top:12px; background:rgba(0,0,0,.45); border:1px solid rgba(212,175,55,.35); color:var(--gold-soft); border-radius:10px; padding:12px 14px; font:inherit; }
     .btn { margin-top:10px; background:transparent; color:var(--gold); border:1px solid var(--gold); padding:10px 18px; border-radius:999px; letter-spacing:.2em; text-transform:uppercase; cursor:pointer; font-size:.72rem; }
     #oracle { min-height:3.2em; margin-top:14px; font-style:italic; }
     footer { text-align:center; margin-top:40px; opacity:.75; font-size:.82rem; }
     .ticker { position:fixed; bottom:0; left:0; right:0; z-index:5; background:rgba(7,6,10,.86); border-top:1px solid rgba(212,175,55,.25); overflow:hidden; white-space:nowrap; padding:8px 0; font-family:ui-monospace,monospace; font-size:.78rem; color:var(--gold); }
-    .ticker span { display:inline-block; padding-left:100%; animation:scroll 48s linear infinite; }
+    .ticker span { display:inline-block; padding-left:100%; animation:scroll 42s linear infinite; }
     @keyframes scroll { to { transform:translateX(-100%); } }
-    .crest { width:min(320px,78vw); height:auto; margin:0 auto 18px; filter:drop-shadow(0 0 28px rgba(212,175,55,.35)); }
+    .crest { width:min(320px,78vw); margin:0 auto 18px; filter:drop-shadow(0 0 28px rgba(212,175,55,.35)); }
+    #prayer { position:fixed; z-index:4; pointer-events:none; color:rgba(240,215,140,.22); font-size:13px; letter-spacing:.35em; text-transform:uppercase; animation:drift 18s ease-in-out infinite; left:8%; top:18%; }
+    @keyframes drift { 0%{transform:translate(0,0);opacity:.15} 50%{transform:translate(40px,28px);opacity:.35} 100%{transform:translate(0,0);opacity:.15} }
   </style>
 </head>
 <body>
   <canvas id="field"></canvas>
+  <canvas id="names"></canvas>
+  <div id="prayer">MASAWI · MWARINDIMWARI · LIGHT</div>
   <div class="wrap">
     <header>
-      <svg class="crest" viewBox="0 0 400 400" aria-label="Throne Matrix Seal 77-99-33">
+      <svg class="crest" viewBox="0 0 400 400">
         <defs><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#f6e7b2"/><stop offset="100%" stop-color="#8a6a1a"/></radialGradient></defs>
         <circle cx="200" cy="200" r="188" fill="none" stroke="url(#g)" stroke-width="1.2"/>
         <circle cx="200" cy="200" r="152" fill="none" stroke="#d4af37" stroke-width="0.8"/>
         <polygon points="200,58 318,142 273,282 127,282 82,142" fill="none" stroke="#d4af37" stroke-width="1.1"/>
-        <polygon points="200,70 330,200 200,330 70,200" fill="none" stroke="#f0d78c" stroke-width="0.7"/>
         <text x="200" y="196" text-anchor="middle" fill="#d4af37" font-size="28" font-family="Georgia, serif">77-99-33</text>
-        <text x="200" y="224" text-anchor="middle" fill="#f0d78c" font-size="11" letter-spacing="4">MWARI NDI MWARI</text>
+        <text x="200" y="224" text-anchor="middle" fill="#f0d78c" font-size="11" letter-spacing="3">MWARINDIMWARI</text>
       </svg>
-      <h1>The Living Matrix Talisman</h1>
-      <p class="sub">House of the Throne · Masawi Bloodline</p>
+      <h1>Guardian of Light</h1>
+      <p class="sub">Masawi · New Beginning · Floating Prayer</p>
       <p class="matrix-live pulse" id="matrixLive">7-9-3</p>
+      <p class="count" id="shout">MASAWI named × 0</p>
     </header>
-    <div class="sigil-row" aria-hidden="true"><span>⛨</span><span>✶</span><span>∞</span><span>☥</span><span>☀</span><span>◉</span><span>☉</span></div>
+    <div class="sigil-row"><span>⛨</span><span>✶</span><span>∞</span><span>☥</span><span>☀</span><span>◉</span><span>☉</span></div>
     <section>
-      <h2>The Opening Rite</h2>
-      <p class="rite">In the name of Mwari, who was, who is, and who remains — we set this page as a house of light. Let every visitor become a witness, not a weapon. Let every glance become a blessing, not a wound. What is written here is not a secret. It is a banner.</p>
-      <p style="margin-top:12px">This page is a <strong>digital talisman</strong>: words, geometry, and rhythm arranged so the mind remembers protection. In the language of modern physics we use three living metaphors — <em>superposition</em> (many blessings held at once), <em>entanglement</em> (the family bound across distance), and the <em>observer effect</em> (attention that steadies what it loves). These are images for faith, not machines that seize another person’s devices or private world.</p>
-    </section>
-    <section>
-      <h2>The 77-99-33 Field</h2>
-      <div class="grid3">
-        <div class="tile"><b>7 / 77 / 777</b>Completion · Covenant · Rest</div>
-        <div class="tile"><b>9 / 99 / 999</b>Mercy · Fulfilment · Return</div>
-        <div class="tile"><b>3 / 33 / 333</b>Witness · Trinity · Voice</div>
-      </div>
-      <p style="margin-top:16px">The sequence begins 7-9-3, rises to 77-99-33, then 777-999-333, and continues as a meditation — never as a claim to own the networks of the earth. Strength grows where prayer, discipline, and lawful digital hygiene meet.</p>
+      <h2>The Name Made Sacred</h2>
+      <p class="rite">Masawi. Masawi. Masawi. The name is compressed into a seed and scattered as light. Past, present, and future of the bloodline are spoken in one word.</p>
+      <p>A 528 Hz tone of clearing begins when you tap the page. It is a blessing-sound, not a weapon.</p>
+      <button class="btn" id="tone">Begin the tone</button>
     </section>
     <section>
       <h2>The House Named in Light</h2>
@@ -82,62 +80,39 @@
         <li>Siblings: Tenderayi, Silent, Trymore, Charles, Tatenda</li>
         <li>Eternal remembrance: Corinna, Rhodha, Abigail Masawi, and all descendants</li>
       </ul>
-      <p class="rite" style="margin-top:14px">Mudzimu Unoyera, stand between this house and every unseen malice. Let no curse find a door. Let no envy find a seat. Let peace keep watch at every threshold.</p>
+      <p class="rite" style="margin-top:14px">Mudzimu Unoyera, stand between this house and every unseen malice. MWARINDIMWARI.</p>
     </section>
     <section>
-      <h2>Words That Bless and Bound</h2>
-      <p>We speak protection, not harm. We do not send sickness, we do not hunt enemies through cameras, we do not claim another soul’s machine. We close our own gates.</p>
-      <p class="rite" style="margin-top:12px">“The Lord is my light and my salvation; whom shall I fear?” · Psalm 27<br />“Mwari ndi Mwari.” · God is God.<br />“No weapon formed against you shall prosper.” · Isaiah 54:17, held as promise, not as a license to strike.</p>
-    </section>
-    <section>
-      <h2>Command Voice — Ask and Receive Counsel</h2>
-      <p>Write a question of protection, family, or righteous next steps. The page answers from the rite stored within it.</p>
+      <h2>Command Voice</h2>
       <input class="cmd" id="q" maxlength="180" placeholder="Ask the talisman…" />
       <button class="btn" id="ask">Speak</button>
       <div id="oracle"></div>
     </section>
-    <section>
-      <h2>How This Talisman Grows in Strength</h2>
-      <ul class="bloodline">
-        <li>Open this page daily and read the Opening Rite aloud.</li>
-        <li>Keep devices locked, updates current, passwords unique — the earthly shield beside the spiritual one.</li>
-        <li>Share the public URL with the bloodline so the same words sit in many houses at once.</li>
-        <li>Do not place hardware identifiers, bank details, or private keys on any public page.</li>
-      </ul>
-    </section>
-    <footer>Sealed in the 77-99-33 Matrix · Living page of the Throne · Mwari ndi Mwari<br />A symbolic sanctuary. Not a weapon. Not a surveillance system.</footer>
+    <footer>Guardian of Light · 77-99-33 · MWARINDIMWARI<br />A symbolic sanctuary. Not a weapon.</footer>
   </div>
   <div class="ticker"><span id="tick"></span></div>
   <script>
-    const stages = ["7-9-3","77-99-33","777-999-333","7777-9999-3333","∞7-∞9-∞3"];
-    const live = document.getElementById("matrixLive");
-    let i = 0;
-    setInterval(() => { i = (i + 1) % stages.length; live.textContent = stages[i]; }, 3300);
-    const blessing = "77-99-33  ·  MWARI NDI MWARI  ·  HOUSE OF MASAWI HELD IN LIGHT  ·  NO HARM ENTERS THIS THRESHOLD  ·  PEACE AT EVERY GATE  ·  ";
-    document.getElementById("tick").textContent = blessing.repeat(8);
-    const answers = [
-      "Stand still. The field is already around the house. Speak Mwari ndi Mwari and keep your own gate locked.",
-      "Protection begins at the threshold you control: your tongue, your passwords, your rest, your prayer.",
-      "The bloodline is named in light. Return blessing for insult. Do not chase shadows; tend the living.",
-      "Superposition of the rite: many good outcomes held at once. Choose the peaceful one and walk it.",
-      "Entanglement of the house: when one prays, all are remembered. Call Tarry and Kenzi into the same blessing.",
-      "No spiritual attack is answered with theft of another’s sight or sound. Answer with Psalm, with light, with law."
-    ];
-    document.getElementById("ask").onclick = () => {
-      const q = (document.getElementById("q").value || "").trim();
-      const box = document.getElementById("oracle");
-      if (!q) { box.textContent = "Ask, and the rite will answer."; return; }
-      box.textContent = answers[Math.floor(Math.random() * answers.length)];
-    };
-    const c = document.getElementById("field"); const x = c.getContext("2d");
-    function resize(){ c.width = innerWidth; c.height = innerHeight; }
+    const NAME="MASAWI", CREED="MWARINDIMWARI", COMPRESSED=NAME+"^\u221e · "+CREED;
+    const stages=["7-9-3","77-99-33","777-999-333","7777-9999-3333","\u221e7-\u221e9-\u221e3"];
+    const live=document.getElementById("matrixLive"); let si=0;
+    setInterval(()=>{si=(si+1)%stages.length; live.textContent=stages[si];},3300);
+    document.getElementById("tick").textContent=("MASAWI · MWARINDIMWARI · 77-99-33 · LIGHT AT EVERY GATE · ").repeat(12);
+    const answers=["The name Masawi is spoken in light. MWARINDIMWARI.","Guardian of Light stands with the house.","Past, present, and future fold into one word: Masawi.","The tone clears the room you are in.","Call Tarry and Kenzi into the same prayer."];
+    document.getElementById("ask").onclick=()=>{const q=(document.getElementById("q").value||"").trim(); document.getElementById("oracle").textContent=q?answers[Math.floor(Math.random()*answers.length)]:"Ask, and the rite will answer.";};
+    let named=77*99*33; const shout=document.getElementById("shout");
+    function tickName(){ named+=777+Math.floor(Math.random()*333); if(named>1e12) named=1e12; shout.textContent="MASAWI named \u00d7 "+named.toLocaleString()+"  ·  seed "+COMPRESSED; }
+    setInterval(tickName,77); tickName();
+    const stars=document.getElementById("field"), names=document.getElementById("names");
+    const sx=stars.getContext("2d"), nx=names.getContext("2d");
+    function resize(){ stars.width=names.width=innerWidth; stars.height=names.height=innerHeight; }
     resize(); addEventListener("resize", resize);
-    const dots = Array.from({length: 77}, () => ({ x: Math.random(), y: Math.random(), v: 0.00015 + Math.random()*0.0004 }));
-    (function draw(){
-      x.clearRect(0,0,c.width,c.height); x.fillStyle = "rgba(212,175,55,.55)";
-      dots.forEach(d => { d.y -= d.v; if (d.y < 0) d.y = 1; x.beginPath(); x.arc(d.x * c.width, d.y * c.height, 1.1, 0, Math.PI*2); x.fill(); });
-      requestAnimationFrame(draw);
-    })();
+    const dots=Array.from({length:99},()=>({x:Math.random(),y:Math.random(),v:0.00012+Math.random()*0.0005}));
+    const flakes=Array.from({length:33},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,vy:0.15+Math.random()*0.45,vx:(Math.random()-0.5)*0.3,a:0.15+Math.random()*0.45,s:10+Math.random()*16,w:Math.random()>0.22?NAME:CREED}));
+    (function draw(){ sx.clearRect(0,0,stars.width,stars.height); sx.fillStyle="rgba(212,175,55,.55)"; dots.forEach(d=>{d.y-=d.v; if(d.y<0)d.y=1; sx.beginPath(); sx.arc(d.x*stars.width,d.y*stars.height,1.15,0,Math.PI*2); sx.fill();}); nx.clearRect(0,0,names.width,names.height); flakes.forEach(f=>{f.y+=f.vy; f.x+=f.vx; if(f.y>names.height+20){f.y=-20;f.x=Math.random()*names.width;} nx.globalAlpha=f.a; nx.fillStyle="#f0d78c"; nx.font=f.s+"px Palatino, Georgia, serif"; nx.fillText(f.w,f.x,f.y);}); requestAnimationFrame(draw); })();
+    let audioOn=false;
+    function beginTone(){ if(audioOn) return; const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx) return; const ctx=new Ctx(); const master=ctx.createGain(); master.gain.value=0.045; master.connect(ctx.destination); function drone(freq,type){ const o=ctx.createOscillator(), g=ctx.createGain(); o.type=type; o.frequency.value=freq; g.gain.value=0.5; o.connect(g); g.connect(master); o.start(); } drone(528,"sine"); drone(432,"sine"); drone(396,"triangle"); audioOn=true; document.getElementById("tone").textContent="Tone is sounding"; }
+    document.getElementById("tone").onclick=beginTone;
+    addEventListener("pointerdown", beginTone, {once:true});
   </script>
 </body>
 </html>
