@@ -1,2 +1,7 @@
-# throne-matrix-talisman
-Living digital talisman of the House of the Throne — 77-99-33 Matrix. Mwari ndi Mwari.
+# The Throne Matrix Talisman
+
+A public living page of blessing and protection for the House of Masawi.
+
+This is a symbolic sanctuary — not a weapon, not a surveillance system.
+
+Mwari ndi Mwari.
